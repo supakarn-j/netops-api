@@ -1,0 +1,25 @@
+{
+    "_ansible_facts_gathered": true,
+    "ansible_net_api": "cliconf",
+    "ansible_net_gather_network_resources": [],
+    "ansible_net_gather_subset": [
+        "default"
+    ],
+    "ansible_net_hostname": "SW1-C3650",
+    "ansible_net_image": "flash:packages.conf",
+    "ansible_net_iostype": "IOS-XE",
+    "ansible_net_model": "WS-C3650-24TS",
+    "ansible_net_operatingmode": "controller",
+    "ansible_net_python_version": "3.10.6",
+    "ansible_net_serialnum": "FDO2030E312",
+    "ansible_net_stacked_models": [
+        "WS-C3650-24TS"
+    ],
+    "ansible_net_stacked_serialnums": [
+        "FDO2030E312"
+    ],
+    "ansible_net_system": "ios",
+    "ansible_net_version": "16.06.02",
+    "ansible_net_virtual_switch": "STACK",
+    "ansible_network_resources": {}
+}

@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "7bfea116-3d25-441b-b996-143603e682d2", "counter": 1, "stdout": "\u001b[0;31mERROR! the playbook: static_route.yml could not be found\u001b[0m", "start_line": 0, "end_line": 1, "runner_ident": "c5c12ecf-da91-4eec-8532-b8052be37b43", "created": "2023-06-29T03:27:31.735165"}

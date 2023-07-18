@@ -1,0 +1,22 @@
+[1;35m[WARNING]: Found variable using reserved name: action[0m
+
+PLAY [General Config] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [10.88.39.33][0m
+
+TASK [Load new acl into device] ************************************************
+[0;32mok: [10.88.39.33][0m
+
+TASK [Configure class in af11] *************************************************
+[1;35mdevice[0m
+[0;33mchanged: [10.88.39.33][0m
+
+TASK [Configure policer in af11] ***********************************************
+[0;33mchanged: [10.88.39.33][0m
+
+TASK [input service policy at Interface] ***************************************
+[0;33mchanged: [10.88.39.33][0m
+
+PLAY RECAP *********************************************************************
+[0;33m10.88.39.33[0m                : [0;32mok=5   [0m [0;33mchanged=3   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

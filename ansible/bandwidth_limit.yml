@@ -1,0 +1,39 @@
+---
+- name: Bandwidth limit for a specific host
+  hosts: 10.88.39.33
+  vars: 
+    policy_name: "af11"
+    bandwidth: "5000000"
+    undo: ""
+
+  tasks:
+
+  - name: Load new acl into device
+    cisco.ios.ios_config:
+      parents:
+      - "ip access-list extended {{ policy_name }}"
+      lines:
+      - "{{ undo }} permit ip any host {{ dest_ip }}"
+      match: exact
+  - name: Configure class in {{ policy_name }}
+    cisco.ios.ios_config:
+      lines:
+        - "class-map match-all {{ policy_name }}"
+        - "match access-group name {{ policy_name }}"
+      match: exact
+  - name: Configure policer in {{ policy_name }}
+    cisco.ios.ios_config:
+      parents:
+        - policy-map {{ policy_name }}
+      lines:
+        - class class-default
+        - "{{ undo }} shape average {{ bandwidth }}"
+      match: exact
+  - name: input service policy at Interface
+    cisco.ios.ios_config:
+      parents: 
+        - interface GigabitEthernet1/0/21
+      lines:
+        - no shutdown
+        - "{{ undo }} service-policy output {{ policy_name }}"
+      match: exact

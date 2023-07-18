@@ -1,0 +1,16 @@
+---
+- name: Config Static route
+  hosts: 10.88.39.33
+  gather_facts: no
+  tasks:
+  - name: Merge provided configuration with device configuration
+    cisco.ios.ios_static_routes:
+      state: '{{ action }}'
+      config:
+      - address_families:
+        - afi: ipv4
+          routes:
+          - dest: '{{ dest_ip }}/32'
+            next_hops:
+            - forward_router_address: GigabitEthernet1/0/23
+              name: test

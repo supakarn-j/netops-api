@@ -1,0 +1,19 @@
+[1;35m[WARNING]: Found variable using reserved name: action[0m
+
+PLAY [Bandwidth limit for a specific host] *************************************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [10.88.39.33][0m
+
+TASK [Load new acl into device] ************************************************
+[0;32mok: [10.88.39.33][0m
+
+TASK [Configure class in af11] *************************************************
+[1;35mdevice[0m
+[0;33mchanged: [10.88.39.33][0m
+
+TASK [Configure policer in af11] ***********************************************
+[0;31mfatal: [10.88.39.33]: FAILED! => {"changed": false, "module_stderr": "shape average 100\r\nshape average 100\r\n              ^\r\n% Invalid input detected at '^' marker.\r\n\r\nSW1-C3650(config-pmap-c)#", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}[0m
+
+PLAY RECAP *********************************************************************
+[0;31m10.88.39.33[0m                : [0;32mok=3   [0m [0;33mchanged=1   [0m unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   

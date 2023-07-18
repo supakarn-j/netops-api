@@ -1,0 +1,12 @@
+[
+  {
+    "name": "10.88.39.125",
+    "description": "link to app1",
+    "is_active": true
+  },
+  {
+    "name": "10.88.39.134",
+    "description": "link to app2",
+    "is_active": true
+  }
+]

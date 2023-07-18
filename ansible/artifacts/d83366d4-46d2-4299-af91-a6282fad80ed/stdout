@@ -1,0 +1,9 @@
+[1;35m[WARNING]: Found variable using reserved name: action[0m
+
+PLAY [Config Static route] *****************************************************
+
+TASK [Merge provided configuration with device configuration] ******************
+[0;31mfatal: [10.88.39.33]: FAILED! => {"changed": false, "module_stderr": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide.", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"}[0m
+
+PLAY RECAP *********************************************************************
+[0;31m10.88.39.33[0m                : ok=0    changed=0    unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   

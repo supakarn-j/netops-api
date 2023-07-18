@@ -1,0 +1,9 @@
+[1;35m[WARNING]: Found variable using reserved name: action[0m
+
+PLAY [Config Static route] *****************************************************
+
+TASK [Merge provided configuration with device configuration] ******************
+[0;33mchanged: [10.88.39.33][0m
+
+PLAY RECAP *********************************************************************
+[0;33m10.88.39.33[0m                : [0;32mok=1   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
